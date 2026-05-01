@@ -5,6 +5,7 @@ import { VitePWA } from 'vite-plugin-pwa';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/story-app-dicoding/',
   root: resolve(__dirname, 'src'),
   publicDir: resolve(__dirname, 'src', 'public'),
   plugins: [
@@ -18,7 +19,8 @@ export default defineConfig({
         name: 'Story App',
         short_name: 'StoryApp',
         start_url: '.',
-        description: 'Platform sosial untuk berbagi cerita dan pengalaman harian Anda dengan dunia secara instan.',
+        description:
+          'Platform sosial untuk berbagi cerita dan pengalaman harian Anda dengan dunia secara instan.',
         display: 'standalone',
         background_color: '#ffffff',
         theme_color: '#0891b2',
